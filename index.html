@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Epsilon AI Assistant</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <span class="icon-layers"></span>
+                    </div>
+                    <span class="logo-text">Epsilon AI</span>
+                </div>
+            </div>
+            
+            <button class="new-chat-btn">
+                <span class="icon-plus"></span>
+                New Conversation
+            </button>
+            
+            <div class="chat-history">
+                <div class="history-section">
+                    <span class="history-label">Today</span>
+                    <div class="history-item active">
+                        <span class="icon-chat"></span>
+                        <span>Website redesign ideas</span>
+                    </div>
+                    <div class="history-item">
+                        <span class="icon-chat"></span>
+                        <span>Marketing strategy Q1</span>
+                    </div>
+                </div>
+                <div class="history-section">
+                    <span class="history-label">Yesterday</span>
+                    <div class="history-item">
+                        <span class="icon-chat"></span>
+                        <span>Code review assistance</span>
+                    </div>
+                    <div class="history-item">
+                        <span class="icon-chat"></span>
+                        <span>Product launch planning</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="sidebar-footer">
+                <div class="user-profile">
+                    <div class="avatar">AK</div>
+                    <div class="user-info">
+                        <span class="user-name">Amey Kulkarni</span>
+                        <span class="user-plan">Pro Plan</span>
+                    </div>
+                    <button class="settings-btn">
+                        <span class="icon-settings"></span>
+                    </button>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Chat Area -->
+        <main class="chat-main">
+            <header class="chat-header">
+                <button class="menu-toggle">
+                    <span class="icon-menu"></span>
+                </button>
+                <div class="model-selector">
+                    <span class="model-name">Epsilon Pro</span>
+                    <span class="icon-chevron"></span>
+                </div>
+                <div class="header-actions">
+                    <button class="header-btn" title="Share">
+                        <span class="icon-share"></span>
+                    </button>
+                </div>
+            </header>
+
+            <div class="chat-container" id="chatContainer">
+                <!-- Welcome Screen -->
+                <div class="welcome-screen" id="welcomeScreen">
+                    <div class="welcome-icon">
+                        <span class="icon-layers-large"></span>
+                    </div>
+                    <h1>How can I help you today?</h1>
+                    <p>I'm Epsilon, your AI assistant. Ask me anything or choose a suggestion below.</p>
+                    
+                    <div class="suggestions">
+                        <button class="suggestion-card" data-prompt="Help me write a professional email to my team about project updates">
+                            <div class="suggestion-icon">
+                                <span class="icon-email"></span>
+                            </div>
+                            <div class="suggestion-content">
+                                <span class="suggestion-title">Write an email</span>
+                                <span class="suggestion-desc">Professional team communication</span>
+                            </div>
+                        </button>
+                        <button class="suggestion-card" data-prompt="Explain quantum computing in simple terms">
+                            <div class="suggestion-icon">
+                                <span class="icon-info"></span>
+                            </div>
+                            <div class="suggestion-content">
+                                <span class="suggestion-title">Explain a concept</span>
+                                <span class="suggestion-desc">Break down complex topics</span>
+                            </div>
+                        </button>
+                        <button class="suggestion-card" data-prompt="Help me brainstorm creative ideas for a mobile app startup">
+                            <div class="suggestion-icon">
+                                <span class="icon-bulb"></span>
+                            </div>
+                            <div class="suggestion-content">
+                                <span class="suggestion-title">Brainstorm ideas</span>
+                                <span class="suggestion-desc">Creative thinking assistance</span>
+                            </div>
+                        </button>
+                        <button class="suggestion-card" data-prompt="Review and improve this code for better performance">
+                            <div class="suggestion-icon">
+                                <span class="icon-code"></span>
+                            </div>
+                            <div class="suggestion-content">
+                                <span class="suggestion-title">Review code</span>
+                                <span class="suggestion-desc">Optimize and debug</span>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Messages Container -->
+                <div class="messages" id="messages"></div>
+            </div>
+
+            <!-- Input Area -->
+            <div class="input-area">
+                <div class="input-container">
+                    <div class="input-wrapper">
+                        <button class="attach-btn" title="Attach file">
+                            <span class="icon-attach"></span>
+                        </button>
+                        <textarea 
+                            id="messageInput" 
+                            placeholder="Message Epsilon..." 
+                            rows="1"
+                            autofocus
+                        ></textarea>
+                        <button class="send-btn" id="sendBtn" disabled>
+                            <span class="icon-send"></span>
+                        </button>
+                    </div>
+                    <p class="input-hint">Epsilon can make mistakes. Consider checking important information.</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
