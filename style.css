@@ -449,6 +449,8 @@ textarea {
 .logo-icon {
     width: 36px;
     height: 36px;
+    min-width: 36px;
+    min-height: 36px;
     border-radius: var(--radius-sm);
     display: flex;
     align-items: center;
@@ -457,8 +459,10 @@ textarea {
 }
 
 .logo-icon img {
-    width: 100%;
-    height: 100%;
+    width: 36px;
+    height: 36px;
+    max-width: 36px;
+    max-height: 36px;
     object-fit: contain;
 }
 
@@ -727,6 +731,8 @@ textarea {
 .welcome-icon {
     width: 80px;
     height: 80px;
+    min-width: 80px;
+    min-height: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -734,8 +740,10 @@ textarea {
 }
 
 .welcome-icon img {
-    width: 100%;
-    height: 100%;
+    width: 80px;
+    height: 80px;
+    max-width: 80px;
+    max-height: 80px;
     object-fit: contain;
     image-rendering: -webkit-optimize-contrast;
     image-rendering: crisp-edges;
