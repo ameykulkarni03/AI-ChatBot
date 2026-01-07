@@ -9,6 +9,9 @@ const suggestionCards = document.querySelectorAll('.suggestion-card');
 const menuToggle = document.querySelector('.menu-toggle');
 const sidebar = document.querySelector('.sidebar');
 
+// Get logo image path from the existing logo in the page (ensures correct path)
+const logoImageSrc = document.querySelector('.logo-icon img')?.src || './image.png';
+
 // State
 let isTyping = false;
 
@@ -119,11 +122,11 @@ function addMessage(content, type) {
     } else {
         messageDiv.innerHTML = `
             <div class="message-avatar">
-                <span class="icon-epsilon"></span>
+                <img src="${logoImageSrc}" alt="Epsilon AI">
             </div>
             <div class="message-content">
                 <div class="message-header">
-                    <span class="message-author">Epsilon</span>
+                    <span class="message-author">Epsilon AI</span>
                     <span class="message-time">${time}</span>
                 </div>
                 <div class="message-text">
@@ -167,11 +170,11 @@ function showTypingIndicator() {
     typingDiv.className = 'message assistant typing';
     typingDiv.innerHTML = `
         <div class="message-avatar">
-            <span class="icon-epsilon"></span>
+            <img src="${logoImageSrc}" alt="Epsilon">
         </div>
         <div class="message-content">
             <div class="message-header">
-                <span class="message-author">Epsilon</span>
+                <span class="message-author">Epsilon AI</span>
             </div>
             <div class="typing-indicator">
                 <span></span>
