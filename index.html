@@ -14,7 +14,7 @@
             <div class="sidebar-header">
                 <div class="logo">
                     <div class="logo-icon">
-                        <img src="image.png" alt="Epsilon AI Logo">
+                        <img src="./image.png" alt="Epsilon AI Logo">
                     </div>
                     <span class="logo-text">Epsilon AI</span>
                 </div>
@@ -26,28 +26,7 @@
             </button>
             
             <div class="chat-history">
-                <div class="history-section">
-                    <span class="history-label">Today</span>
-                    <div class="history-item active">
-                        <span class="icon-chat"></span>
-                        <span>Website redesign ideas</span>
-                    </div>
-                    <div class="history-item">
-                        <span class="icon-chat"></span>
-                        <span>Marketing strategy Q1</span>
-                    </div>
-                </div>
-                <div class="history-section">
-                    <span class="history-label">Yesterday</span>
-                    <div class="history-item">
-                        <span class="icon-chat"></span>
-                        <span>Code review assistance</span>
-                    </div>
-                    <div class="history-item">
-                        <span class="icon-chat"></span>
-                        <span>Product launch planning</span>
-                    </div>
-                </div>
+                <!-- Chat history will be populated dynamically -->
             </div>
             
             <div class="sidebar-footer">
@@ -74,60 +53,17 @@
                     <span class="model-name">Epsilon Pro</span>
                     <span class="icon-chevron"></span>
                 </div>
-                <div class="header-actions">
-                    <button class="header-btn" title="Share">
-                        <span class="icon-share"></span>
-                    </button>
-                </div>
             </header>
 
             <div class="chat-container" id="chatContainer">
                 <!-- Welcome Screen -->
                 <div class="welcome-screen" id="welcomeScreen">
                     <div class="welcome-icon">
-                        <img src="image.png" alt="Epsilon AI">
+                        <img src="./image.png" alt="Epsilon AI">
                     </div>
                     <h1>How can I help you today?</h1>
                     <p>I'm Epsilon AI, your AI assistant. Ask me anything or choose a suggestion below.</p>
                     
-                    <div class="suggestions">
-                        <button class="suggestion-card" data-prompt="Help me write a professional email to my team about project updates">
-                            <div class="suggestion-icon">
-                                <span class="icon-email"></span>
-                            </div>
-                            <div class="suggestion-content">
-                                <span class="suggestion-title">Write an email</span>
-                                <span class="suggestion-desc">Professional team communication</span>
-                            </div>
-                        </button>
-                        <button class="suggestion-card" data-prompt="Explain quantum computing in simple terms">
-                            <div class="suggestion-icon">
-                                <span class="icon-info"></span>
-                            </div>
-                            <div class="suggestion-content">
-                                <span class="suggestion-title">Explain a concept</span>
-                                <span class="suggestion-desc">Break down complex topics</span>
-                            </div>
-                        </button>
-                        <button class="suggestion-card" data-prompt="Help me brainstorm creative ideas for a mobile app startup">
-                            <div class="suggestion-icon">
-                                <span class="icon-bulb"></span>
-                            </div>
-                            <div class="suggestion-content">
-                                <span class="suggestion-title">Brainstorm ideas</span>
-                                <span class="suggestion-desc">Creative thinking assistance</span>
-                            </div>
-                        </button>
-                        <button class="suggestion-card" data-prompt="Review and improve this code for better performance">
-                            <div class="suggestion-icon">
-                                <span class="icon-code"></span>
-                            </div>
-                            <div class="suggestion-content">
-                                <span class="suggestion-title">Review code</span>
-                                <span class="suggestion-desc">Optimize and debug</span>
-                            </div>
-                        </button>
-                    </div>
                 </div>
 
                 <!-- Messages Container -->
